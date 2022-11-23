@@ -1,0 +1,64 @@
+{
+  "id": "menu",
+  "label": "menu",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "login_link2": {
+        "type": "Link",
+        "config": {
+          "label": "login link2",
+          "placeholder": "",
+          "allowTargetBlank": false,
+          "select": null
+        }
+      },
+      "login_label": {
+        "type": "Text",
+        "config": {
+          "label": "login label",
+          "placeholder": ""
+        }
+      },
+      "sale_link2": {
+        "type": "Link",
+        "config": {
+          "label": "sale link2",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "sale_label": {
+        "type": "Text",
+        "config": {
+          "label": "sale label",
+          "placeholder": ""
+        }
+      },
+      "menu_group": {
+        "type": "Group",
+        "config": {
+          "label": "menu group",
+          "fields": {
+            "menu_label": {
+              "type": "Text",
+              "config": {
+                "label": "menu label",
+                "placeholder": ""
+              }
+            },
+            "menu_item": {
+              "type": "Link",
+              "config": {
+                "label": "menu item",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

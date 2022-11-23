@@ -1,0 +1,42 @@
+{
+  "id": "home",
+  "label": "home",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Title",
+          "placeholder": "this is your title",
+          "allowTargetBlank": true,
+          "single": "heading1"
+        }
+      },
+      "homeimage": {
+        "type": "Image",
+        "config": {
+          "label": "homeimage",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "hero_slice": {
+              "type": "SharedSlice"
+            },
+            "image_text_slice": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "test": {}
+  }
+}

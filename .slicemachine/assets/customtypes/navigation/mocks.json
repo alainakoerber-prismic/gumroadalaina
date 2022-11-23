@@ -1,0 +1,23 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "navigation",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "name": [
+      {
+        "type": "paragraph",
+        "text": "Deserunt magna eiusmod ipsum est id amet cupidatat proident amet. Amet sint et irure minim sit exercitation aute. Cupidatat ut dolore velit ad pariatur dolore minim consequat ea aliquip aliqua magna nisi aute deserunt.",
+        "spans": []
+      }
+    ],
+    "slices": []
+  }
+}
