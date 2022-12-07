@@ -1,5 +1,5 @@
 import { SliceZone, PrismicRichText, PrismicLink } from '@prismicio/react'
-import { createClient, linkResolver } from '../../prismicio'
+import { createClient } from '../../prismicio'
 import { components } from '../../slices'
 import { Layout } from '../../components/Layout'
 import * as prismicH from '@prismicio/helpers'
@@ -34,7 +34,7 @@ export async function getStaticPaths() {
     // We'll pre-render only these paths at build time.
     // { fallback: false } means other routes should 404.
     return { 
-      paths: blogs.map ((blog) => prismicH.asLink(blog, linkResolver)),
+      paths: blogs.map ((blog) => prismicH.asLink(blog)),
       fallback: false }
     // return { paths, fallback: false }
 
