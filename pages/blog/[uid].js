@@ -1,8 +1,7 @@
-import { SliceZone, PrismicRichText, PrismicLink } from '@prismicio/react'
+import { SliceZone, PrismicRichText } from '@prismicio/react'
 import { createClient } from '../../prismicio'
 import { components } from '../../slices'
 import { Layout } from '../../components/Layout'
-import * as prismicH from '@prismicio/helpers'
 
 const Blog = ({ blog, navigation }) => {
 
@@ -33,16 +32,14 @@ export async function getStaticPaths() {
 
     // We'll pre-render only these paths at build time.
     // { fallback: false } means other routes should 404.
-    return { 
-      paths: blogs.map ((blog) => prismicH.asLink(blog)),
-      fallback: false }
+    return { paths, fallback: false }
     // return { paths, fallback: false }
 
 
 }
 
-export async function getStaticProps( {params}) {
-        const client = createClient()
+export async function getStaticProps({params, previewData}) {
+        const client = createClient({previewData})
         const blog = await client.getByUID('blog', params.uid)  
         const navigation = await client.getByUID('navigation', 'navigation1')
         // Pass post data to the page via props
