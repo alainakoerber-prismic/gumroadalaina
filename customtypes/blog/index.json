@@ -22,6 +22,12 @@
             },
             "navigation_item": {
               "type": "SharedSlice"
+            },
+            "a_slice_with_a_super_long_name_that_will_display": {
+              "type": "SharedSlice"
+            },
+            "hero_slice": {
+              "type": "SharedSlice"
             }
           }
         }
@@ -39,6 +45,7 @@
           }
         }
       }
-    }
+    },
+    "A third tab": {}
   }
 }

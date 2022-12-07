@@ -55,6 +55,13 @@
                 "placeholder": "",
                 "select": null
               }
+            },
+            "embed": {
+              "type": "Embed",
+              "config": {
+                "label": "embed",
+                "placeholder": ""
+              }
             }
           }
         }

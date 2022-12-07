@@ -1,0 +1,44 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading1",
+            "content": {
+              "text": "Eaten"
+            }
+          }
+        ]
+      },
+      "description": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Velit esse dolor eiusmod irure nulla duis nisi amet minim. Culpa veniam commodo deserunt ullamco cupidatat aliquip pariatur. Adipisicing non dolore sunt Lorem aute in eu ex pariatur aute laborum."
+            }
+          }
+        ]
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "boolean",
+            {
+              "__TYPE__": "BooleanContent",
+              "value": false
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

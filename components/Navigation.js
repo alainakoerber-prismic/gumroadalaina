@@ -2,11 +2,10 @@ import { PrismicLink, PrismicText } from '@prismicio/react';
 
 export function Navigation({ navigation }) {
   return (
-    <>
     <nav>
       <ul>
         {/* Renders top-level links. */}
-        {navigation.data.slices.map((slice) => {
+        {navigation.data?.slices.map((slice) => {
           return (
             <li className='parent' key={slice.id}>
               <PrismicLink field={slice.primary.link}>
@@ -30,7 +29,6 @@ export function Navigation({ navigation }) {
           )
         })}
       </ul>
-    </nav>
 
     <style jsx>{`
         .parent {
@@ -96,7 +94,7 @@ export function Navigation({ navigation }) {
           margin-right: 5px;
         }
     `}</style>
-    </>
+    </nav>
   )
 }
 

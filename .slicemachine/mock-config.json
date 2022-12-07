@@ -82,6 +82,8 @@
           }
         }
       }
-    }
+    },
+    "ASliceWithASuperLongNameThatWillDisplay": {},
+    "ASliceWithASuperLongNam": {}
   }
 }
