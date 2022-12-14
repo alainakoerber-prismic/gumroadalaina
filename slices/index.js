@@ -4,12 +4,14 @@ import ASliceWithASuperLongNam from './ASliceWithASuperLongNam';
 import HeroSlice from './HeroSlice';
 import ImageTextSlice from './ImageTextSlice';
 import NavigationItem from './NavigationItem';
+import TextLeftImageRight from './TextLeftImageRight';
 
 export {
 	ASliceWithASuperLongNam,
 	HeroSlice,
 	ImageTextSlice,
 	NavigationItem,
+	TextLeftImageRight,
 };
 
 export const components = {
@@ -17,4 +19,5 @@ export const components = {
 	hero_slice: HeroSlice,
 	image_text_slice: ImageTextSlice,
 	navigation_item: NavigationItem,
+	text_left_image_right: TextLeftImageRight,
 };

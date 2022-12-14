@@ -4,18 +4,16 @@ import { PrismicRichText } from '@prismicio/react'
 const ImageTextSlice = ({ slice }) => (
   <section>
     <div className={slice.variation}>
-      <div className="bg-black border-right">
-        <div className="column-padding centered">
+      <div className="bg-black column-padding">
         {
           slice.variation === 'titleNoImage' ? 
           null 
           : <img src={slice.primary.imagehalf.url} alt={slice.primary.imagehalf.alt} /> 
         }
-        </div>
       </div>
         
       <div className="column-padding">
-        <div className="content-grid">
+        <div>
         {slice.variation === 'imageright' ? <span> {slice.primary.date} </span> :  null }
         {slice.variation === 'noTitleAndImage' ? 
         null
@@ -47,32 +45,20 @@ const ImageTextSlice = ({ slice }) => (
     
     <style jsx>{`
         section {
-          max-width: 1200px;
+          max-width: 100%;
           margin: 4em auto;
           text-align: center;
           font-family: 'Mabry pro', sans-serif;
         }
-        .about-container {
-          margin: 0 auto;
-          padding: 10px;
-        }
         
-        .row {
-          display: grid;
-          grid-template-columns: 25% 1fr; /* or use 50% instad of 1fr */
-          margin: 0 0 50px;
+        
+        .column-padding {
+          justify-content: center;
+          padding: 6.5vw;
         }
         
         img {
           max-width: 100%;
-        }
-        
-        .row:nth-child(2n) {
-          grid-template-columns: 1fr 25%;
-        }
-        
-        .row:nth-child(2n) .col-2 {
-          grid-area: 1;
         }
 
         .default {
@@ -87,6 +73,7 @@ const ImageTextSlice = ({ slice }) => (
           -ms-grid-rows: auto;
           grid-template-rows: auto;
           border-bottom: 2px solid #000;
+          border-top: 2px solid #000;
         }
 
         .imageright {

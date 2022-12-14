@@ -84,6 +84,18 @@
       }
     },
     "ASliceWithASuperLongNameThatWillDisplay": {},
-    "ASliceWithASuperLongNam": {}
+    "ASliceWithASuperLongNam": {},
+    "TextLeftImageRight": {
+      "default": {
+        "primary": {
+          "description": {
+            "config": {
+              "patternType": "STORY",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
   }
 }

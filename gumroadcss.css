@@ -739,7 +739,7 @@ figcaption {
 }
 
 .page-wrap {
-  overflow: hidden;
+  overflow: non;
 }
 
 .rich-text h1 {

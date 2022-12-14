@@ -32,6 +32,9 @@
             },
             "image_text_slice": {
               "type": "SharedSlice"
+            },
+            "text_left_image_right": {
+              "type": "SharedSlice"
             }
           }
         }
