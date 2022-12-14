@@ -40,6 +40,21 @@
         }
       }
     },
-    "test": {}
+    "SEO": {
+      "seo_title": {
+        "type": "Text",
+        "config": {
+          "label": "SEO title",
+          "placeholder": ""
+        }
+      },
+      "seo_description": {
+        "type": "Text",
+        "config": {
+          "label": "SEO description",
+          "placeholder": ""
+        }
+      }
+    }
   }
 }
