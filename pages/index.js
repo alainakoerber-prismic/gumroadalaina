@@ -8,8 +8,8 @@ const Page = ({ page, navigation }) => {
   return (
     <Layout navigation={navigation}>
       <Head>
-      <span>{ page.data.seo_title }</span>
-      <span>{ page.data.seo_description }</span>
+      <title>{ page.data.seo_title }</title>
+      <meta name='description' content ={ page.data.seo_description }></meta>
       </Head>
       <div> 
         {/* <PrismicRichText field={page.data.title}/> */}
