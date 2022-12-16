@@ -80,6 +80,7 @@ p {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 /* ul {
@@ -102,10 +103,6 @@ strong {
   font-weight: 500;
 }
 
-a {
-  color: inherit;
-  text-decoration: underline;
-}
 /* 
 .grid-halves {
   -ms-grid-columns: 1fr;
@@ -118,10 +115,6 @@ a {
 
 .mega-gum-logo {
   width: 100%;
-}
-
-.section-title {
-  font-size: 4.5rem;
 }
 
 .bg-pink {

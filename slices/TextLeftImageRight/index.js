@@ -9,7 +9,7 @@ import { PrismicRichText,PrismicLink } from '@prismicio/react'
 const TextLeftImageRight = ({ slice }) => (
   <section className="default">
     <div className="column-padding border-right bg-pink">
-        <div>
+        <div className='content-grid'>
             <span className="title">
             {
               slice.primary.title ? 
@@ -24,10 +24,11 @@ const TextLeftImageRight = ({ slice }) => (
             : <p>start by editing this slice from inside Slice Machine!</p>
             }
             </span>
-        </div>
-        <div className='button'>    
-        <PrismicLink field={slice.primary.buttonlink}><span>{slice.primary.buttontext}</span></PrismicLink>
-        </div>
+            <div className='shadow-button-text'>    
+                <PrismicLink field={slice.primary.buttonlink}><span>{slice.primary.buttontext}</span></PrismicLink>
+            </div>
+      </div>
+        
     </div>
 
     <div className="column-padding bg-yellow">
@@ -44,7 +45,7 @@ const TextLeftImageRight = ({ slice }) => (
         section {
           max-width: 100%;
           margin: 4em auto;
-          text-align: center;
+          text-align: left;
           font-family: 'Mabry pro', sans-serif;
         }
         
@@ -53,24 +54,11 @@ const TextLeftImageRight = ({ slice }) => (
           justify-content: center;
           padding: 6.5vw;
         }
-
-        .row {
-          display: grid;
-          grid-template-columns: 25% 1fr; /* or use 50% instad of 1fr */
-          margin: 0 0 50px;
-        }
         
         img {
           max-width: 100%;
         }
-        
-        .row:nth-child(2n) {
-          grid-template-columns: 1fr 25%;
-        }
-        
-        .row:nth-child(2n) .col-2 {
-          grid-area: 1;
-        }
+
 
         .default {
           display: -ms-grid;
@@ -85,13 +73,46 @@ const TextLeftImageRight = ({ slice }) => (
           grid-template-rows: auto;
           border-bottom: 2px solid #000;
         }
-        
+
         .border-right {
           border-right: 2px solid #000;
         }
 
+        .shadow-button-text {
+          position: relative;
+          z-index: 1;
+          padding: 1.1rem 2rem 1.2rem;
+          border-radius: 4px;
+          background-color: #000;
+          color: #fff;
+          font-size: 1.5rem;
+          text-align: center;
+          text-decoration: none;
+        }
 
-      }
+        .content-grid {
+          display: -ms-grid;
+          display: grid;
+          width: 100%;
+          max-width: 48rem;
+          margin-right: 0px;
+          margin-left: 0px;
+          justify-items: stretch;
+          -webkit-box-align: stretch;
+          -webkit-align-items: stretch;
+          -ms-flex-align: stretch;
+          align-items: stretch;
+          -webkit-align-content: start;
+          -ms-flex-line-pack: start;
+          align-content: start;
+          grid-auto-columns: 1fr;
+          grid-column-gap: 0px;
+          grid-row-gap: 3rem;
+          -ms-grid-columns: 1fr;
+          grid-template-columns: 1fr;
+          -ms-grid-rows: auto;
+          grid-template-rows: auto;
+        }
 
     `}</style>
   </section>
