@@ -18,41 +18,20 @@
         "__TYPE__": "StructuredTextContent",
         "value": [
           {
-            "type": "heading1",
+            "type": "heading5",
             "content": {
-              "text": "Acres"
-            }
-          },
-          {
-            "type": "image",
-            "data": {
-              "origin": {
-                "id": "main",
-                "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-                "width": 3882,
-                "height": 2584
-              },
-              "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-              "width": 3882,
-              "height": 2584,
-              "edit": {
-                "zoom": 1,
-                "crop": {
-                  "x": 0,
-                  "y": 0
-                },
-                "background": "transparent"
-              },
-              "credits": null,
-              "alt": null,
-              "__TYPE__": "ImageContent"
-            }
+              "text": "Acres",
+              "spans": []
+            },
+            "direction": "ltr"
           },
           {
             "type": "paragraph",
             "content": {
-              "text": "Culpa esse officia incididunt id deserunt. Et nulla excepteur tempor reprehenderit. Anim nisi duis est sit occaecat eu."
-            }
+              "text": "Culpa esse officia incididunt id deserunt. Et nulla excepteur tempor reprehenderit. Anim nisi duis est sit occaecat eu.",
+              "spans": []
+            },
+            "direction": "ltr"
           }
         ]
       },
