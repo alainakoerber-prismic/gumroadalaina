@@ -35,6 +35,12 @@
               "patternType": "HEADING",
               "blocks": 1
             }
+          },
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
           }
         }
       }
@@ -44,6 +50,12 @@
         "primary": {
           "imagehalf": {
             "content": "https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8"
+          },
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
           }
         }
       },

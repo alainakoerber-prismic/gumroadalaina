@@ -97,7 +97,6 @@ const TextLeftImageRight = ({ slice }) => (
           max-width: 48rem;
           margin-right: 0px;
           margin-left: 0px;
-          justify-items: stretch;
           -webkit-box-align: stretch;
           -webkit-align-items: stretch;
           -ms-flex-align: stretch;

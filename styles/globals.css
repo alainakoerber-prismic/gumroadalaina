@@ -8,7 +8,6 @@ html,
 
 body {
   background-color: #fff;
-  padding: 10px;
   margin: 0px;
   font-family: 'Mabry pro', sans-serif;
   color: #000;
@@ -18,8 +17,6 @@ body {
   min-height: 100%;
   box-sizing: border-box;
 }
-
-
 
 h1 {
   margin-top: 0px;
@@ -83,6 +80,10 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+a :hover {
+  text-decoration: underline;
 }
 
 /* ul {
