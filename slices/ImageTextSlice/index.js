@@ -119,11 +119,6 @@ const ImageTextSlice = ({ slice }) => (
           border-bottom: 2px solid #000;
         }
 
-        .bg-black {
-          background-color: #000;
-          color: #fff;
-        }
-
         .border-right {
           border-right: 2px solid #000;
         }

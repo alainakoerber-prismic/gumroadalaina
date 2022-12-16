@@ -8,7 +8,7 @@ import { PrismicRichText,PrismicLink } from '@prismicio/react'
  */
 const TextLeftImageRight = ({ slice }) => (
   <section className="default">
-    <div className="column-padding border-right">
+    <div className="column-padding border-right bg-pink">
         <div>
             <span className="title">
             {
@@ -30,8 +30,8 @@ const TextLeftImageRight = ({ slice }) => (
         </div>
     </div>
 
-    <div className="column-padding">
-         <div className='bg-pink'>
+    <div className="column-padding bg-yellow">
+         <div>
             <div>
               <img src={slice.primary.imageright.url} alt={slice.primary.imageright.alt} /> 
             </div>
@@ -85,12 +85,7 @@ const TextLeftImageRight = ({ slice }) => (
           grid-template-rows: auto;
           border-bottom: 2px solid #000;
         }
-
-        .bg-pink {
-          background-color: ##ff90e8;
-          color: #fff;
-        }
-
+        
         .border-right {
           border-right: 2px solid #000;
         }

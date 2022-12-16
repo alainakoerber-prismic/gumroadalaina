@@ -124,6 +124,22 @@ a {
   font-size: 4.5rem;
 }
 
+.bg-pink {
+  background-color: #ff90e8;
+  color: #000;
+}
+
+.bg-yellow {
+  background-color: #ffc900;
+  color: #000;
+}
+
+
+.bg-black {
+  background-color: #000;
+  color: #fff;
+}
+
 /* .section-intro {
   display: -ms-grid;
   display: grid;
