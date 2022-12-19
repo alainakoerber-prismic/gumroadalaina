@@ -3,7 +3,7 @@ import { PrismicRichText,PrismicLink } from '@prismicio/react'
 
 const HeroSlice = ({ slice }) => (
 <section className={slice.variation}>
-    <div className='column-padding'>
+    <div className='column-padding intro-section'>
       <div>
           {slice.variation === 'default' ? 
           <PrismicRichText field={slice.primary.title}/>
@@ -25,17 +25,25 @@ const HeroSlice = ({ slice }) => (
 
     
         section {
-          max-width: 100%;
-          margin: 4em auto;
           text-align: center;
           font-family: 'Mabry pro', sans-serif;
-          border-bottom: 2px solid #000;
         }
 
         .default {
           position: relative;
           padding-top: 6.5rem;
           padding-bottom: 7rem;
+          border-bottom: 2px solid #000;
+
+        }
+
+        .herowithimage {
+          position: relative;
+          padding-top: 6.5rem;
+          padding-bottom: 7rem;
+        }
+
+        .intro-section {  
           display: -ms-grid;
           display: grid;
           width: 65vw;
@@ -61,10 +69,10 @@ const HeroSlice = ({ slice }) => (
           text-align: center;
         }
 
-        .herowithimage
-          position: relative;
-          padding-top: 6.5rem;
-          padding-bottom: 7rem;
+        
+
+
+
           display: -ms-grid;
           display: grid;
           width: 65vw;
