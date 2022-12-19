@@ -27,19 +27,16 @@ const HeroSlice = ({ slice }) => (
         section {
           text-align: center;
           font-family: 'Mabry pro', sans-serif;
+          border-bottom: 2px solid #000;
         }
 
         .default {
           position: relative;
-          padding-top: 6.5rem;
           padding-bottom: 7rem;
-          border-bottom: 2px solid #000;
-
         }
 
         .herowithimage {
           position: relative;
-          padding-top: 6.5rem;
           padding-bottom: 7rem;
         }
 
