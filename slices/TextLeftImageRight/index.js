@@ -7,7 +7,7 @@ import { PrismicRichText,PrismicLink } from '@prismicio/react'
  * @param { TextLeftImageRightProps }
  */
 const TextLeftImageRight = ({ slice }) => (
-  <section className="default">
+  <section className={slice.variation}>
     <div className="column-padding border-right bg-pink">
         <div className='content-grid'>
             <span className="title">
@@ -28,7 +28,6 @@ const TextLeftImageRight = ({ slice }) => (
                 <PrismicLink field={slice.primary.buttonlink}><span>{slice.primary.buttontext}</span></PrismicLink>
             </div>
       </div>
-        
     </div>
 
     <div className="column-padding bg-yellow">
@@ -72,6 +71,21 @@ const TextLeftImageRight = ({ slice }) => (
           -ms-grid-rows: auto;
           grid-template-rows: auto;
           border-bottom: 2px solid #000;
+        }
+
+        .imageRightTextLeft {
+          display: -ms-grid;
+          display: grid;
+          width: 100%;
+          grid-auto-columns: 1fr;
+          grid-column-gap: 0px;
+          grid-row-gap: 0px;
+          -ms-grid-columns: 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
+          -ms-grid-rows: auto;
+          grid-template-rows: auto;
+          border-bottom: 2px solid #000;
+          direction: rtl;
         }
 
         .border-right {

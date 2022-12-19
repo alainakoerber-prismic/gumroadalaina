@@ -2,24 +2,24 @@ import React from 'react'
 import { PrismicRichText,PrismicLink } from '@prismicio/react'
 
 const HeroSlice = ({ slice }) => (
-  <section className='intro'>
+<section className={slice.variation}>
     <div className='section-intro'>
-      <PrismicRichText field={slice.primary.eyebrow} />
-      <span>
-        {
-        slice.primary.title ?
-        <PrismicRichText field={slice.primary.title}/>
-        : <h1>Template slice, update me!</h1>
-       }
-      </span>
-      {
-      slice.primary.description ?
-      <PrismicRichText field={slice.primary.description}/>
-      : <p>start by editing this slice from inside Slice Machine!</p>
-      }
-
-      <PrismicLink  field={slice.primary.link}><h6>{ slice.primary.textlink }</h6></PrismicLink>
+      <div>
+          {slice.variation === 'default' ? 
+          <PrismicRichText field={slice.primary.title}/>
+          : null 
+          }
       </div>
+      <div>
+          <PrismicRichText field={slice.primary.description}/>
+      </div>
+      <div>
+        {
+          slice.variation === 'default' ? <PrismicLink  field={slice.primary.link}><h6 className='boldlink' >{ slice.primary.textlink }</h6></PrismicLink>
+          : <img src={slice.primary.fullwidthimage.url} alt={slice.primary.fullwidthimage.alt}/> 
+        }
+      </div>
+    </div>
 
     <style jsx>{`
 
@@ -29,12 +29,20 @@ const HeroSlice = ({ slice }) => (
           margin: 4em auto;
           text-align: center;
           font-family: 'Mabry pro', sans-serif;
+        }
 
-        .intro
-        position: relative;
-        padding-top: 6.5rem;
-        padding-bottom: 7rem;
-        border-bottom: 2px solid #000;
+        .default {
+          position: relative;
+          padding-top: 6.5rem;
+          padding-bottom: 7rem;
+          border-bottom: 2px solid #000;
+        }
+
+        .herowithimage
+          position: relative;
+          padding-top: 6.5rem;
+          padding-bottom: 7rem;
+          border-bottom: 2px solid #000;
         }
 
         .section-intro {

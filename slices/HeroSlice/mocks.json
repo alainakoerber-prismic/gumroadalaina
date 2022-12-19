@@ -1,28 +1,83 @@
 [
   {
     "__TYPE__": "SharedSliceContent",
-    "variation": "default",
+    "variation": "herowithimage",
     "primary": {
-      "eyebrow": {
+      "description": {
         "__TYPE__": "StructuredTextContent",
         "value": [
           {
-            "type": "heading6",
+            "type": "paragraph",
             "content": {
-              "text": "",
-              "spans": []
-            },
-            "direction": "ltr"
+              "text": "Ad ipsum excepteur eiusmod duis ex nostrud est commodo."
+            }
           }
         ]
       },
+      "fullwidthimage": {
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb",
+          "width": 3958,
+          "height": 3958
+        },
+        "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb?rect=0%2C0%2C3958%2C3958&w=1000&h=1000",
+        "width": 1000,
+        "height": 1000,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 0
+          },
+          "background": "transparent"
+        },
+        "credits": null,
+        "alt": null,
+        "__TYPE__": "ImageContent",
+        "thumbnails": {
+          "mobile": {
+            "origin": {
+              "id": "mobile",
+              "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b",
+              "width": 3560,
+              "height": 5340
+            },
+            "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?rect=0%2C0%2C3560%2C5340&w=350&h=525",
+            "width": 350,
+            "height": 525,
+            "edit": {
+              "zoom": 1,
+              "crop": {
+                "x": 0,
+                "y": 0
+              },
+              "background": "transparent"
+            },
+            "credits": null,
+            "alt": null
+          }
+        }
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  },
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
       "title": {
         "__TYPE__": "StructuredTextContent",
         "value": [
           {
             "type": "heading1",
             "content": {
-              "text": "Disappear"
+              "text": "Wrapped"
             }
           }
         ]
@@ -33,7 +88,7 @@
           {
             "type": "paragraph",
             "content": {
-              "text": "Ut officia pariatur ullamco occaecat consectetur ex ut. Elit in incididunt reprehenderit anim sint ullamco sit minim commodo enim do commodo reprehenderit."
+              "text": "Esse aliqua amet elit in nulla enim."
             }
           }
         ]

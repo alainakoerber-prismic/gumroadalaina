@@ -21,12 +21,6 @@
       "default": {
         "items": {},
         "primary": {
-          "eyebrow": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          },
           "textlink": {
             "content": "do this now"
           },
@@ -43,6 +37,9 @@
             }
           }
         }
+      },
+      "herowithimage": {
+        "primary": {}
       }
     },
     "ImageTextSlice": {

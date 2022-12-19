@@ -136,6 +136,10 @@ strong {
   color: #fff;
 }
 
+.boldlink {
+  font-weight: 800;
+}
+
 /* .section-intro {
   display: -ms-grid;
   display: grid;
