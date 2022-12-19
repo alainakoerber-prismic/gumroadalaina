@@ -27,7 +27,7 @@ export async function getStaticProps({ previewData }) {
 
   const page = await client.getSingle('home');
   // const menu = await client.getSingle('menu');
-  const navigation = await client.getByUID('navigation', 'navigation2')
+  const navigation = await client.getByUID('navigation', 'navigation1')
 
   return {
     props: {

@@ -2,7 +2,7 @@ import { PrismicLink, PrismicText } from '@prismicio/react';
 
 export function Navigation({ navigation }) {
   return (
-    <nav className={slice.variation}>
+    <nav>
       <ul>
         {/* Renders top-level links. */}
         {navigation.data?.slices.map((slice) => {
@@ -31,20 +31,12 @@ export function Navigation({ navigation }) {
       </ul>
 
     <style jsx>{`
-        .default {
+        .parent {
           display: block;
           position: relative;
           float: left;
           line-height: 30px;
           background-color: #4FA0D8;
-          border-right: #CCC 1px solid;
-        }
-
-        .onelevelnav {
-          position: relative;
-          float: left;
-          line-height: 100px;
-          background-color: #000;
           border-right: #CCC 1px solid;
         }
         
