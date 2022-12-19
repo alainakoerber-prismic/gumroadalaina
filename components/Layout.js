@@ -9,7 +9,7 @@ export const Layout = ({
   children,
 }) => {
   return (
-    <div className="text-slate-700">
+    <div>
       <Navigation navigation={navigation} />
       <main>{children}</main>
     </div>
