@@ -9,7 +9,7 @@
           {
             "type": "heading1",
             "content": {
-              "text": "Glass"
+              "text": "Suggest"
             }
           }
         ]
@@ -18,7 +18,7 @@
         "__TYPE__": "LinkContent",
         "value": {
           "__TYPE__": "ExternalLink",
-          "url": "https://prismic.io"
+          "url": "https://slicemachine.dev"
         }
       }
     },
@@ -34,7 +34,7 @@
                 {
                   "type": "paragraph",
                   "content": {
-                    "text": "Aliquip ex pariatur ut elit culpa dolor qui nulla voluptate velit dolor eiusmod ad anim veniam."
+                    "text": "Nisi sunt fugiat laboris eiusmod dolor et excepteur voluptate."
                   }
                 }
               ]
@@ -51,6 +51,36 @@
             }
           ]
         ]
+      }
+    ]
+  },
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "onelevelnav",
+    "primary": {
+      "name": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading1",
+            "content": {
+              "text": "System"
+            }
+          }
+        ]
+      },
+      "link": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "http://twitter.com"
+        }
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
       }
     ]
   }

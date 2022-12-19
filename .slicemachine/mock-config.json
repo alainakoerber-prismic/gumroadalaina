@@ -89,7 +89,11 @@
               "blocks": 1
             }
           }
-        }
+        },
+        "items": {}
+      },
+      "onelevelnav": {
+        "items": {}
       }
     },
     "ASliceWithASuperLongNameThatWillDisplay": {},
