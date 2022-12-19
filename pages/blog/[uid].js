@@ -41,7 +41,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({params, previewData}) {
         const client = createClient({previewData})
         const blog = await client.getByUID('blog', params.uid)  
-        const navigation = await client.getByUID('navigation', 'navigation1')
+        const navigation = await client.getByUID('navigation', 'navigation2')
         // Pass post data to the page via props
         return { props: { blog, navigation } }
       }

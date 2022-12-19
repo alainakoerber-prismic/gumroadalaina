@@ -2,8 +2,8 @@ import { PrismicLink, PrismicText } from '@prismicio/react';
 
 export function Navigation({ navigation }) {
   return (
-    <nav>
-      <ul className={slice.variation}>
+    <nav className={slice.variation}>
+      <ul>
         {/* Renders top-level links. */}
         {navigation.data?.slices.map((slice) => {
           return (

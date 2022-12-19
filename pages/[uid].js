@@ -38,7 +38,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({params, previewData}) {
         const client = createClient({previewData})
         const [navigation, generic_page_data] = await Promise.all([
-          client.getByUID('navigation', 'navigation1'),
+          client.getByUID('navigation', 'navigation2'),
           client.getByUID('generic', params.uid),
         ])
 
