@@ -3,10 +3,10 @@ import { createClient } from '../../prismicio'
 import { components } from '../../slices'
 import { Layout } from '../../components/Layout'
 
-const Blog = ({ blog, navigation }) => {
+const Blog = ({ blog, menu }) => {
 
   return (
-    <Layout navigation={navigation}>
+    <Layout menu={menu}>
       
     
     <div>{blog.uid}
@@ -40,8 +40,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({params, previewData}) {
         const client = createClient({previewData})
-        const blog = await client.getByUID('blog', params.uid)  
-        const navigation = await client.getByUID('navigation', 'navigation1')
+        const blog = await client.getByUID('blog', params.uid) 
+        const menu = await client.getSingle('menu');
+        // const navigation = await client.getByUID('navigation', 'navigation1')
         // Pass post data to the page via props
-        return { props: { blog, navigation } }
+        return { props: { blog, menu } }
       }

@@ -4,19 +4,23 @@ import { createClient } from '../prismicio';
 import { components } from '../slices';
 import Head from 'next/head';
 
-const Page = ({ page, navigation }) => {
+const Page = ({ page, menu }) => {
   return (
-    <Layout navigation={navigation}>
+    
+    <>
       <Head>
-      <title>{ page.data.seo_title }</title>
-      <meta name='description' content ={ page.data.seo_description }></meta>
+        <title>{ page.data.seo_title }</title>
+        <meta name='description' content ={ page.data.seo_description }></meta>
       </Head>
       <div> 
-        {/* <PrismicRichText field={page.data.title}/> */}
-        <div className='mega-gum-logo-wrap'><img className='mega-gum-logo' src={page.data.homeimage.url} alt={page.data.homeimage.alt} /></div>
-        <SliceZone slices = {page.data.slices} components={components} />
+          {/* <PrismicRichText field={page.data.title}/> */}
+          <div className='mega-gum-logo-wrap'><img className='mega-gum-logo' src={page.data.homeimage.url} alt={page.data.homeimage.alt} /></div>
+          <Layout menu = {menu}>
+      </Layout>
+          <SliceZone slices = {page.data.slices} components={components} />
       </div>
-    </Layout>
+   
+    </>
   )
 }
 
@@ -26,13 +30,13 @@ export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData });
 
   const page = await client.getSingle('home');
-  // const menu = await client.getSingle('menu');
-  const navigation = await client.getByUID('navigation', 'navigation1')
+  const menu = await client.getSingle('menu');
+  // const navigation = await client.getByUID('navigation', 'navigation1')
 
   return {
     props: {
       page,
-      navigation,
+      menu,
     },
   }
 }

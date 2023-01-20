@@ -8,14 +8,14 @@ import { PrismicRichText,PrismicLink } from '@prismicio/react'
  */
 const TextLeftImageRight = ({ slice }) => (
   <section className={slice.variation}>
-    <div className="column-padding border-right bg-pink">
+    <div className={`bg-${slice.primary.bgcolorselect} border-right column-padding`}>
         <div className='content-grid'>
             <span className="title">
-            {
+              { 
               slice.primary.title ? 
-                <PrismicRichText field={slice.primary.title}/>
-              : <h2>Template slice, update me!</h2>
-            }
+              <PrismicRichText field={slice.primary.title}/>
+              : <h1>Title!</h1>
+              }
             </span>
             <span className='description'>
             {
@@ -43,12 +43,10 @@ const TextLeftImageRight = ({ slice }) => (
     <style jsx>{`
         section {
           max-width: 100%;
-          margin: 4em auto;
           text-align: left;
           font-family: 'Mabry pro', sans-serif;
         }
-        
-        
+
         .column-padding {
           justify-content: center;
           padding: 6.5vw;
@@ -60,29 +58,23 @@ const TextLeftImageRight = ({ slice }) => (
 
 
         .default {
-          display: -ms-grid;
           display: grid;
           width: 100%;
           grid-auto-columns: 1fr;
           grid-column-gap: 0px;
           grid-row-gap: 0px;
-          -ms-grid-columns: 1fr 1fr;
           grid-template-columns: 1fr 1fr;
-          -ms-grid-rows: auto;
           grid-template-rows: auto;
           border-bottom: 2px solid #000;
         }
 
         .imageRightTextLeft {
-          display: -ms-grid;
           display: grid;
           width: 100%;
           grid-auto-columns: 1fr;
           grid-column-gap: 0px;
           grid-row-gap: 0px;
-          -ms-grid-columns: 1fr 1fr;
           grid-template-columns: 1fr 1fr;
-          -ms-grid-rows: auto;
           grid-template-rows: auto;
           border-bottom: 2px solid #000;
           direction: rtl;
@@ -105,7 +97,6 @@ const TextLeftImageRight = ({ slice }) => (
         }
 
         .content-grid {
-          display: -ms-grid;
           display: grid;
           width: 100%;
           max-width: 48rem;

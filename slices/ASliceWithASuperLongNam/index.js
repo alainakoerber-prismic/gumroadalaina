@@ -23,7 +23,6 @@ const ASliceWithASuperLongNameThatWillDisplay = ({ slice }) => (
     <style jsx>{`
         section {
           max-width: 600px;
-          margin: 4em auto;
           text-align: center;
         }
         .title {

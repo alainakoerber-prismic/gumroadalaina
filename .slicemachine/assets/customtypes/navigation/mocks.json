@@ -1,23 +1,81 @@
 {
-  "id": "mock-doc-id",
-  "url": null,
-  "type": "navigation",
-  "href": null,
-  "tags": [],
-  "first_publication_date": "1970-01-01T00:00:01+0000",
-  "last_publication_date": "1970-01-01T00:00:01+0000",
-  "slugs": [],
-  "linked_documents": [],
-  "lang": "en-us",
-  "alternate_languages": [],
-  "data": {
-    "name": [
+  "name": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
       {
         "type": "paragraph",
-        "text": "Deserunt magna eiusmod ipsum est id amet cupidatat proident amet. Amet sint et irure minim sit exercitation aute. Cupidatat ut dolore velit ad pariatur dolore minim consequat ea aliquip aliqua magna nisi aute deserunt.",
-        "spans": []
+        "content": {
+          "text": "Id laboris nisi dolor incididunt occaecat consequat eu."
+        }
       }
-    ],
-    "slices": []
+    ]
+  },
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "acres"
+  },
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "navigation_item$15ebd8f1-ec7c-46aa-8b41-28dd2785ccdb",
+        "name": "navigation_item",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "name": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Sweet"
+                  }
+                }
+              ]
+            },
+            "link": {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "https://slicemachine.dev"
+              }
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "name",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Aliqua mollit nostrud adipisicing."
+                        }
+                      }
+                    ]
+                  }
+                ],
+                [
+                  "link",
+                  {
+                    "__TYPE__": "LinkContent",
+                    "value": {
+                      "__TYPE__": "ExternalLink",
+                      "url": "https://slicemachine.dev"
+                    }
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ]
   }
 }

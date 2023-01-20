@@ -4,10 +4,10 @@ import { components } from '../slices'
 import { Layout } from '../components/Layout'
 import * as prismicH from '@prismicio/helpers'
 
-const Page = ({ generic_page_data, navigation }) => {
+const Page = ({ generic_page_data, menu }) => {
 
   return (
-    <Layout navigation={navigation}>
+    <Layout menu={menu}>
     <div>{generic_page_data.uid}
     <PrismicRichText field={generic_page_data.data.title}/> 
    <SliceZone slices = {generic_page_data.data.slices} components={components} />
@@ -37,13 +37,14 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({params, previewData}) {
         const client = createClient({previewData})
-        const [navigation, generic_page_data] = await Promise.all([
-          client.getByUID('navigation', 'navigation1'),
+        const menu = await client.getSingle('menu');
+        const [generic_page_data] = await Promise.all([
+          // client.getByUID('navigation', 'navigation1'),
           client.getByUID('generic', params.uid),
         ])
 
         // const generic_page_data = await client.getByUID('generic', params.uid)  
         // Pass post data to the page via props
-        return { props: { generic_page_data, navigation } }
+        return { props: { generic_page_data, menu } }
       }
     

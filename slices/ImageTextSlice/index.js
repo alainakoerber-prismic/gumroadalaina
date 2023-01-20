@@ -46,7 +46,6 @@ const ImageTextSlice = ({ slice }) => (
     <style jsx>{`
         section {
           max-width: 100%;
-          margin: 4em auto;
           text-align: center;
           font-family: 'Mabry pro', sans-serif;
         }
@@ -62,30 +61,24 @@ const ImageTextSlice = ({ slice }) => (
         }
 
         .default {
-          display: -ms-grid;
           display: grid;
           width: 100%;
           grid-auto-columns: 1fr;
           grid-column-gap: 0px;
           grid-row-gap: 0px;
-          -ms-grid-columns: 1fr 1fr;
           grid-template-columns: 1fr 1fr;
-          -ms-grid-rows: auto;
           grid-template-rows: auto;
           border-bottom: 2px solid #000;
           border-top: 2px solid #000;
         }
 
         .imageright {
-          display: -ms-grid;
           display: grid;
           width: 100%;
           grid-auto-columns: 1fr;
           grid-column-gap: 0px;
           grid-row-gap: 0px;
-          -ms-grid-columns: 1fr 1fr;
           grid-template-columns: 1fr 1fr;
-          -ms-grid-rows: auto;
           grid-template-rows: auto;
           border-bottom: 2px solid #000;
           direction: rtl;

@@ -50,6 +50,19 @@
             "constraint": {},
             "thumbnails": []
           }
+        },
+        "bgcolorselect": {
+          "type": "Select",
+          "config": {
+            "label": "bgcolorselect",
+            "placeholder": "",
+            "options": [
+              "yellow",
+              "pink",
+              "black",
+              "green"
+            ]
+          }
         }
       },
       "items": {},

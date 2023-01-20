@@ -9,7 +9,7 @@
           {
             "type": "heading1",
             "content": {
-              "text": "Light"
+              "text": "Daily"
             }
           }
         ]
@@ -20,13 +20,13 @@
           {
             "type": "heading1",
             "content": {
-              "text": "Single"
+              "text": "Drawn"
             }
           },
           {
             "type": "paragraph",
             "content": {
-              "text": "Cupidatat tempor aliqua qui do adipisicing amet. Esse fugiat magna laboris laboris ullamco proident et sunt."
+              "text": "Ea amet aute mollit sunt sunt eu amet deserunt dolore non aliqua sunt dolore cupidatat. Amet esse commodo cupidatat excepteur est do enim cillum esse. Minim consectetur commodo ex exercitation mollit non sint dolor anim ut laborum consectetur."
             }
           }
         ]
@@ -35,24 +35,24 @@
         "__TYPE__": "LinkContent",
         "value": {
           "__TYPE__": "ExternalLink",
-          "url": "http://google.com"
+          "url": "https://slicemachine.dev"
         }
       },
       "buttontext": {
         "__TYPE__": "FieldContent",
-        "value": "while",
+        "value": "battle",
         "type": "Text"
       },
       "imageright": {
         "origin": {
           "id": "main",
-          "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6",
-          "width": 3212,
-          "height": 3880
+          "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a",
+          "width": 4000,
+          "height": 4000
         },
-        "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6",
-        "width": 3212,
-        "height": 3880,
+        "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a",
+        "width": 4000,
+        "height": 4000,
         "edit": {
           "zoom": 1,
           "crop": {
@@ -65,6 +65,11 @@
         "alt": null,
         "__TYPE__": "ImageContent",
         "thumbnails": {}
+      },
+      "bgcolorselect": {
+        "__TYPE__": "FieldContent",
+        "value": "green",
+        "type": "Select"
       }
     },
     "items": [
@@ -84,7 +89,7 @@
           {
             "type": "heading1",
             "content": {
-              "text": "Depth"
+              "text": "Front"
             }
           }
         ]
@@ -95,7 +100,7 @@
           {
             "type": "paragraph",
             "content": {
-              "text": "Exercitation fugiat proident non enim adipisicing culpa voluptate. Commodo dolor laboris proident est aliqua nulla consectetur incididunt enim aliqua reprehenderit exercitation excepteur ut. Cupidatat velit elit ipsum veniam."
+              "text": "Do non magna aliquip deserunt laboris. Incididunt tempor aliqua duis fugiat adipisicing id pariatur nulla pariatur commodo nisi sint velit. Eiusmod Lorem sit fugiat cupidatat nisi voluptate quis proident laboris non."
             }
           }
         ]
@@ -109,19 +114,20 @@
       },
       "buttontext": {
         "__TYPE__": "FieldContent",
-        "value": "even",
+        "value": "sentence",
         "type": "Text"
       },
       "imageright": {
+        "__TYPE__": "ImageContent",
         "origin": {
           "id": "main",
-          "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8",
-          "width": 3456,
-          "height": 3456
+          "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+          "width": 5616,
+          "height": 3744
         },
-        "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8",
-        "width": 3456,
-        "height": 3456,
+        "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+        "width": 5616,
+        "height": 3744,
         "edit": {
           "zoom": 1,
           "crop": {
@@ -130,9 +136,6 @@
           },
           "background": "transparent"
         },
-        "credits": null,
-        "alt": null,
-        "__TYPE__": "ImageContent",
         "thumbnails": {}
       }
     },
