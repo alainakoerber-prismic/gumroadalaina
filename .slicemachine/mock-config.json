@@ -14,7 +14,8 @@
     "menu": {
       "menu_group": {}
     },
-    "navigation": {}
+    "navigation": {},
+    "articles": {}
   },
   "slices": {
     "HeroSlice": {

@@ -12,6 +12,13 @@
           "placeholder": ""
         }
       },
+      "embed": {
+        "type": "Embed",
+        "config": {
+          "label": "embed",
+          "placeholder": ""
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",

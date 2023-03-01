@@ -1,0 +1,35 @@
+{
+  "id": "articles",
+  "label": "articles",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "authorimage": {
+        "type": "Image",
+        "config": {
+          "label": "authorimage",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "authorlink": {
+        "type": "Link",
+        "config": {
+          "label": "authorlink",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "authorname": {
+        "type": "StructuredText",
+        "config": {
+          "label": "authorname",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      }
+    }
+  }
+}

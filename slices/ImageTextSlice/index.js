@@ -1,5 +1,7 @@
 import React from 'react'
 import { PrismicRichText } from '@prismicio/react'
+import { PrismicLink } from '@prismicio/react'
+
 
 const ImageTextSlice = ({ slice }) => (
   <section>
@@ -35,7 +37,10 @@ const ImageTextSlice = ({ slice }) => (
           </div>
           <div>
             {slice.variation === 'noTitleAndImage' ? <PrismicRichText field={slice.primary.richtext} /> : null }
-          </div>          
+          </div> 
+          <div>
+            <PrismicLink  document={slice.primary.author}>My Link</PrismicLink>
+          </div>         
         </div>
       </div>
     </div>

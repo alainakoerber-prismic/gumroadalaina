@@ -44,6 +44,16 @@
             "label": "textlink",
             "placeholder": "add your link text"
           }
+        },
+        "author": {
+          "type": "Link",
+          "config": {
+            "label": "author",
+            "select": "document",
+            "customtypes": [
+              "articles"
+            ]
+          }
         }
       },
       "items": {},

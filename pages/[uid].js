@@ -22,25 +22,22 @@ export default Page
 export async function getStaticPaths() {
     // Call an external API endpoint to get posts
     const client = createClient()
-    const pages = await client.getAllByType('generic')
-  
-    // Get the paths we want to pre-render based on posts
-    const paths = pages.map((page) => ({
-      params: { uid: page.uid },
-    }))
-  
-    // We'll pre-render only these paths at build time.
-    // { fallback: false } means other routes should 404.
-    return { paths, fallback: false }
+    const documents = await client.getAllByType('generic', { lang: '*' })
 
+  return {
+    paths: documents.map((doc) => {
+      return { params: { uid: doc.uid }, locale: doc.lang }
+    }),
+    fallback: false,
+  }
 }
 
-export async function getStaticProps({params, previewData}) {
+export async function getStaticProps({params, previewData, locale}) {
         const client = createClient({previewData})
-        const menu = await client.getSingle('menu');
+        const menu = await client.getSingle('menu', { lang: locale});
         const [generic_page_data] = await Promise.all([
           // client.getByUID('navigation', 'navigation1'),
-          client.getByUID('generic', params.uid),
+          client.getByUID('generic', params.uid, { lang: locale}),
         ])
 
         // const generic_page_data = await client.getByUID('generic', params.uid)  

@@ -20,11 +20,11 @@ const TextLeftImageRight = ({ slice }) => (
             <span className='description'>
             {
             slice.primary.description ?
-            <PrismicRichText field={slice.primary.description}/>
+            <PrismicRichText className="ul" field={slice.primary.description}/>
             : <p>start by editing this slice from inside Slice Machine!</p>
             }
             </span>
-            <div className='shadow-button-text'>    
+            <div className='shadow-button-text' id="nono">    
                 <PrismicLink field={slice.primary.buttonlink}><span>{slice.primary.buttontext}</span></PrismicLink>
             </div>
       </div>
@@ -78,7 +78,13 @@ const TextLeftImageRight = ({ slice }) => (
           grid-template-rows: auto;
           border-bottom: 2px solid #000;
           direction: rtl;
+
         }
+
+       .rich-text /deep/ .text-ul { 
+          direction: rtl;
+        }
+
 
         .border-right {
           border-right: 2px solid #000;

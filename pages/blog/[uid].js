@@ -1,21 +1,22 @@
-import { SliceZone, PrismicRichText } from '@prismicio/react'
-import { createClient } from '../../prismicio'
-import { components } from '../../slices'
-import { Layout } from '../../components/Layout'
+import { SliceZone, PrismicRichText } from '@prismicio/react';
+import { createClient } from '../../prismicio';
+import { components } from '../../slices';
+import { Layout } from '../../components/Layout';
+import { PrismicLink } from '@prismicio/react';
+
 
 const Blog = ({ blog, menu }) => {
 
   return (
-    <Layout menu={menu}>
-      
-    
-    <div>{blog.uid}
-    <PrismicRichText field={blog.data.title}/> 
-   <SliceZone slices = {blog.data.slices} components={components} />
-    </div>
-    </Layout>)
+    <>
+    <Layout menu={menu}></Layout>
+    <span>{ blog.data.uid }</span>
+    {/* <PrismicLink document={blog.data.author}>my link</PrismicLink> */}
+    <PrismicRichText field={blog.data.author.data.authorname} />
+    <SliceZone slices = {blog.data.slices} components={components} />
+    </>
+    )
 }
-
 export default Blog
   
   // This function gets called at build time
@@ -40,9 +41,21 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({params, previewData}) {
         const client = createClient({previewData})
-        const blog = await client.getByUID('blog', params.uid) 
         const menu = await client.getSingle('menu');
+        const blog = await client.getByUID('blog', params.uid, {
+          fetchLinks: 'articles.authorname',
+        } )
+        
+        
+       
         // const navigation = await client.getByUID('navigation', 'navigation1')
         // Pass post data to the page via props
-        return { props: { blog, menu } }
+        
+        console.log("************")
+        console.log(blog.data.author.data)  
+        return {
+          props: { 
+            blog, menu 
+          } 
+        }
       }

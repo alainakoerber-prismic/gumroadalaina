@@ -12,6 +12,16 @@
           "placeholder": ""
         }
       },
+      "author": {
+        "type": "Link",
+        "config": {
+          "label": "author",
+          "select": "document",
+          "customtypes": [
+            "articles"
+          ]
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
