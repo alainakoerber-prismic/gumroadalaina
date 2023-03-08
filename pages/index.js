@@ -16,9 +16,9 @@ const Page = ({ page, menu }) => {
       <div> 
           {/* <PrismicRichText field={page.data.title}/> */}
           <div className='mega-gum-logo-wrap'><img className='mega-gum-logo' src={page.data.homeimage.url} alt={page.data.homeimage.alt} /></div>
-          <Layout menu = {menu}>
+          <Layout altLangs={page.alternate_languages} menu={menu}>
+          <SliceZone slices={page.data.slices} components={components} />
           </Layout>
-          <SliceZone slices = {page.data.slices} components={components} />
       </div>
    
     </>
@@ -32,6 +32,7 @@ export async function getStaticProps({ previewData, locale }) {
   const page = await client.getSingle('home', { lang: locale });
   const menu = await client.getSingle('menu', { lang: locale });
   // const navigation = await client.getByUID('navigation', 'navigation1')
+
 
   return {
     props: {

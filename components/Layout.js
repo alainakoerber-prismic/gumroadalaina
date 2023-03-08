@@ -1,16 +1,14 @@
-import { PrismicLink } from '@prismicio/react';
-// import { Header } from "./Header";
-// import { Footer } from "./Footer";
 import { Menu } from './Menu.js';
-// import { menu } from './Navigation.js';
 
 export const Layout = ({
-  menu,
+  menu, 
+  altLangs,
   children,
 }) => {
+
   return (
     <div>
-      <Menu menu={menu} />
+      <Menu menu={menu} altLangs={altLangs} />
       <main>{children}</main>
     </div>
   );

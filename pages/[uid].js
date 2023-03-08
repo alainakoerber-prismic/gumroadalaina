@@ -7,7 +7,7 @@ import * as prismicH from '@prismicio/helpers'
 const Page = ({ generic_page_data, menu }) => {
 
   return (
-    <Layout menu={menu}>
+    <Layout altlangs={generic_page_data.alternate_languages} menu={menu}>
     <div>{generic_page_data.uid}
     <PrismicRichText field={generic_page_data.data.title}/> 
    <SliceZone slices = {generic_page_data.data.slices} components={components} />
@@ -37,7 +37,8 @@ export async function getStaticProps({params, previewData, locale}) {
         const menu = await client.getSingle('menu', { lang: locale});
         const [generic_page_data] = await Promise.all([
           // client.getByUID('navigation', 'navigation1'),
-          client.getByUID('generic', params.uid, { lang: locale}),
+          client.getByUID('generic', params.uid, { lang: locale }),
+          console.log()
         ])
 
         // const generic_page_data = await client.getByUID('generic', params.uid)  

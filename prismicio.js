@@ -28,6 +28,12 @@ const routes = [
   // },
 ]
 
+export function linkResolver(doc) {
+  if (doc.type === 'page') {
+    return `/`
+  }
+  return null
+}
 /**
  * Creates a Prismic client for the project's repository. The client is used to
  * query content from the Prismic API.

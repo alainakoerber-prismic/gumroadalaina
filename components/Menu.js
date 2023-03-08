@@ -1,7 +1,8 @@
 import { PrismicLink } from '@prismicio/react'
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 
-export const Menu = ({ menu }) => {
+export const Menu = ({ menu, altLangs }) => {
     return ( 
         <nav className='nav-container'>
             <ul className='nav-menu li'>
@@ -19,6 +20,11 @@ export const Menu = ({ menu }) => {
                 <li><PrismicLink field={menu.data.login_link2}><a>{menu.data.login_label}</a></PrismicLink></li>
                 <li><PrismicLink field={menu.data.sale_link2}><a>{ menu.data.sale_label }</a></PrismicLink></li>
             </ul>
+            <LanguageSwitcher altLangs={altLangs} />
+    
+
+        
+            
 
 <style jsx>{`
 
