@@ -1,5 +1,5 @@
 {
-  "apiEndpoint": "https://gumroadalaina.prismic.io/api/v2",
+  "apiEndpoint": "https://gumroadalaina-dev-1.prismic.io/api/v2",
   "libraries": [
     "@/slices"
   ],
