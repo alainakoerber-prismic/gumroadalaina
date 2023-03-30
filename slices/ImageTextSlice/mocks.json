@@ -69,6 +69,13 @@
             "alt": null
           }
         }
+      },
+      "link": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "https://prismic.io"
+        }
       }
     },
     "items": [
@@ -105,7 +112,6 @@
         ]
       },
       "imagehalf": {
-        "__TYPE__": "ImageContent",
         "origin": {
           "id": "main",
           "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb",
@@ -123,6 +129,9 @@
           },
           "background": "transparent"
         },
+        "credits": null,
+        "alt": null,
+        "__TYPE__": "ImageContent",
         "thumbnails": {
           "mobile": {
             "origin": {
@@ -141,7 +150,9 @@
                 "y": 456
               },
               "background": "transparent"
-            }
+            },
+            "credits": null,
+            "alt": null
           }
         }
       },
@@ -185,7 +196,6 @@
         ]
       },
       "imagehalf": {
-        "__TYPE__": "ImageContent",
         "origin": {
           "id": "main",
           "url": "https://images.unsplash.com/photo-1585399000684-d2f72660f092",
@@ -203,6 +213,9 @@
           },
           "background": "transparent"
         },
+        "credits": null,
+        "alt": null,
+        "__TYPE__": "ImageContent",
         "thumbnails": {
           "mobile": {
             "origin": {
@@ -221,7 +234,9 @@
                 "y": 0
               },
               "background": "transparent"
-            }
+            },
+            "credits": null,
+            "alt": null
           }
         }
       }

@@ -39,7 +39,9 @@ const ImageTextSlice = ({ slice }) => (
             {slice.variation === 'noTitleAndImage' ? <PrismicRichText field={slice.primary.richtext} /> : null }
           </div> 
           <div>
-            <PrismicLink  document={slice.primary.author}>My Link</PrismicLink>
+            <PrismicLink  document={slice.primary.author}>Author</PrismicLink>
+            <PrismicLink  field={slice.primary.link}>My Link</PrismicLink>
+
           </div>         
         </div>
       </div>

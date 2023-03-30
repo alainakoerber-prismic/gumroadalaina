@@ -13,14 +13,11 @@ const Page = ({ page, menu }) => {
         <title>{ page.data.seo_title }</title>
         <meta name='description' content ={ page.data.seo_description }></meta>
       </Head>
-      <div> 
+      <div className='mega-gum-logo-wrap'><img className='mega-gum-logo' src={page.data.homeimage.url} alt={page.data.homeimage.alt} /></div>
+      <Layout altLangs={page.alternate_languages} menu={menu}>
           {/* <PrismicRichText field={page.data.title}/> */}
-          <div className='mega-gum-logo-wrap'><img className='mega-gum-logo' src={page.data.homeimage.url} alt={page.data.homeimage.alt} /></div>
-          <Layout altLangs={page.alternate_languages} menu={menu}>
           <SliceZone slices={page.data.slices} components={components} />
-          </Layout>
-      </div>
-   
+      </Layout>
     </>
   )
 }

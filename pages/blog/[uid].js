@@ -2,21 +2,19 @@ import { SliceZone, PrismicRichText } from '@prismicio/react';
 import { createClient } from '../../prismicio';
 import { components } from '../../slices';
 import { Layout } from '../../components/Layout';
-import { PrismicLink } from '@prismicio/react';
-
 
 const Blog = ({ blog, menu }) => {
 
   return (
-    <>
-    <Layout menu={menu}></Layout>
-    <span>{ blog.data.uid }</span>
-    {/* <PrismicLink document={blog.data.author}>my link</PrismicLink> */}
-    <PrismicRichText field={blog.data.author.data.authorname} />
-    <SliceZone slices = {blog.data.slices} components={components} />
-    </>
+    <Layout menu={menu}>
+      <span>{ blog.data.uid }</span>
+      {/* <PrismicLink document={blog.data.author}>my link</PrismicLink> */}
+      <PrismicRichText field={blog.data.author.data.authorname} />
+      <SliceZone slices = {blog.data.slices} components={components} />
+    </Layout>
     )
 }
+
 export default Blog
   
   // This function gets called at build time

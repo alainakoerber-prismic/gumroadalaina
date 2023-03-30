@@ -17,7 +17,7 @@ export const LanguageSwitcher = ({ altLangs = [] }) => {
         return (
           <li key={altLang.lang}>
             <PrismicLink
-              href={linkResolver(altLang)}
+              href={altLang}
               locale={altLang.lang}>
               <LangIcon lang={altLang.lang} />
             </PrismicLink>
