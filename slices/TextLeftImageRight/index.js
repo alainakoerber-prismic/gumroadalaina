@@ -43,7 +43,7 @@ const TextLeftImageRight = ({ slice }) => (
     <style jsx>{`
         section {
           max-width: 100%;
-          text-align: left;
+          text-align: center;
           font-family: 'Mabry pro', sans-serif;
         }
 
