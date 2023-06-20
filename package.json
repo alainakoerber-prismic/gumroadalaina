@@ -21,8 +21,9 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@slicemachine/adapter-next": "^0.3.0",
     "eslint": "8.23.1",
     "eslint-config-next": "12.3.0",
-    "slice-machine-ui": "^0.7.1"
+    "slice-machine-ui": "^1.2.0"
   }
 }

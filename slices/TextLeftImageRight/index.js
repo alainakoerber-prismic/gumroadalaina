@@ -1,5 +1,7 @@
 import React from 'react'
 import { PrismicRichText,PrismicLink } from '@prismicio/react'
+import * as prismic from '@prismicio/client'
+
 
 /**
  * @typedef {import("@prismicio/client").Content.TextLeftImageRightSlice} TextLeftImageRightSlice
@@ -20,7 +22,12 @@ const TextLeftImageRight = ({ slice }) => (
             <span className='description'>
             {
             slice.primary.description ?
-            <PrismicRichText className="ul" field={slice.primary.description}/>
+            <PrismicRichText 
+              field={slice.primary.description}
+              components={{
+                ul: ({ children }) => <blockquote>{children}</blockquote>,
+              }}
+            />
             : <p>start by editing this slice from inside Slice Machine!</p>
             }
             </span>
