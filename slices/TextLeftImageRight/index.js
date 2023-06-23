@@ -26,6 +26,7 @@ const TextLeftImageRight = ({ slice }) => (
               field={slice.primary.description}
               components={{
               list: ({ children }) => <ul className='rich-text-ul' >{children}</ul>,
+              paragraph: ({ children }) => <p className='rich-text-ul' >{children}</p>
               }}
             />
             : <p>start by editing this slice from inside Slice Machine!</p>
