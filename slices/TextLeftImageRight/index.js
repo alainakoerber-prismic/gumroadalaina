@@ -25,7 +25,7 @@ const TextLeftImageRight = ({ slice }) => (
             <PrismicRichText 
               field={slice.primary.description}
               components={{
-                ul: ({ children }) => <blockquote>{children}</blockquote>,
+              list: ({ children }) => <ul className='rich-text-ul' >{children}</ul>,
               }}
             />
             : <p>start by editing this slice from inside Slice Machine!</p>
@@ -88,8 +88,8 @@ const TextLeftImageRight = ({ slice }) => (
 
         }
 
-       .rich-text /deep/ .text-ul { 
-          direction: rtl;
+       .rich-text-ul { 
+          direction: ltr;
         }
 
 
